@@ -45,7 +45,7 @@ public class Accueil {
 		frmBienvenueDansEbank = new JFrame();
 		frmBienvenueDansEbank.getContentPane().setForeground(Color.BLACK);
 		frmBienvenueDansEbank.setTitle("Bienvenue dans e-bank");
-		frmBienvenueDansEbank.setBounds(100, 100, 567, 386);
+		frmBienvenueDansEbank.setBounds(100, 100, 724, 497);
 		frmBienvenueDansEbank.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmBienvenueDansEbank.getContentPane().setLayout(null);
 		

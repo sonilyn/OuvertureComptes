@@ -73,7 +73,7 @@ public class Plateforme {
 			case 'A':
 
 				//Appel de la methode qui permettra d'enregistrer un utilisateur dans la base de donnee
-				//s.saveUserService(user);
+				s.saveUserService(user);
 
 
 				break;
@@ -81,6 +81,7 @@ public class Plateforme {
 
 				//Appel de la methode qui permettra à un utilisateur de se connecter 	 
 				//s.connecterUserService(login, password);
+				
 				break;
 			case 'C':
 				

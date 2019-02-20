@@ -11,14 +11,14 @@ import javax.persistence.Id;
  *
  */
 
-
 @Entity
 public class User {
 	
 	// Attributs
 	
-	@Id										
-	@GeneratedValue(strategy=GenerationType.AUTO)
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.AUTO)	
 	protected int identifiant;
 	protected String nom;
     protected String prenom;
@@ -189,8 +189,6 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
-	
 	
 	
 	

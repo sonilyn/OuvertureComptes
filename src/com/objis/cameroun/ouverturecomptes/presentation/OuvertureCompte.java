@@ -42,6 +42,8 @@ public class OuvertureCompte extends JFrame {
 	private JTextField cinTextField;
 	private JTextField revenusTextField;
 	private JTextField fileTextField;
+	private JTextField pseudoTextField;
+	private JTextField mpTextField;
 
 	
 
@@ -51,14 +53,14 @@ public class OuvertureCompte extends JFrame {
 	public OuvertureCompte() {
 		setTitle("Ouverture de Compte en ligne");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 600, 380);
+		setBounds(100, 100, 724, 497);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JTabbedPane tabbedPane_1 = new JTabbedPane(JTabbedPane.TOP);
-		tabbedPane_1.setBounds(10, 11, 564, 330);
+		tabbedPane_1.setBounds(10, 11, 688, 436);
 		contentPane.add(tabbedPane_1);
 		
 		JTabbedPane tabbedPane = new JTabbedPane(JTabbedPane.TOP);
@@ -69,113 +71,113 @@ public class OuvertureCompte extends JFrame {
 		tabbedPane.addTab("Formulaire", null, panel, null);
 		panel.setLayout(null);
 		
-		JLabel lblCivil = new JLabel("Civilit\u00E9 *");
-		lblCivil.setBounds(10, 11, 46, 14);
+		JLabel lblCivil = new JLabel("Civilit\u00E9 ");
+		lblCivil.setBounds(10, 11, 71, 14);
 		panel.add(lblCivil);
 		
 		JRadioButton rdbtnMadame = new JRadioButton("Madame");
-		rdbtnMadame.setBounds(139, 7, 109, 23);
+		rdbtnMadame.setBounds(87, 7, 86, 23);
 		panel.add(rdbtnMadame);
 		
 		JRadioButton rdbtnMonsieur = new JRadioButton("Monsieur");
-		rdbtnMonsieur.setBounds(271, 7, 109, 23);
+		rdbtnMonsieur.setBounds(175, 7, 86, 23);
 		panel.add(rdbtnMonsieur);
 		
 		JLabel lblNom = new JLabel("Nom * :");
-		lblNom.setBounds(10, 52, 67, 14);
+		lblNom.setBounds(10, 52, 80, 14);
 		panel.add(lblNom);
 		
 		nomTextField = new JTextField();
-		nomTextField.setBounds(87, 49, 124, 20);
+		nomTextField.setBounds(100, 49, 161, 20);
 		panel.add(nomTextField);
 		nomTextField.setColumns(10);
 		
 		JLabel lblPrenom = new JLabel("Prenom * :");
-		lblPrenom.setBounds(10, 88, 67, 14);
+		lblPrenom.setBounds(10, 88, 80, 14);
 		panel.add(lblPrenom);
 		
 		prenomTextField = new JTextField();
-		prenomTextField.setBounds(87, 85, 124, 20);
+		prenomTextField.setBounds(100, 85, 161, 20);
 		panel.add(prenomTextField);
 		prenomTextField.setColumns(10);
 		
 		JLabel lblEmail = new JLabel("E-mail * :");
-		lblEmail.setBounds(10, 127, 67, 14);
+		lblEmail.setBounds(10, 127, 80, 14);
 		panel.add(lblEmail);
 		
 		emailTextField = new JTextField();
-		emailTextField.setBounds(87, 124, 161, 20);
+		emailTextField.setBounds(100, 124, 161, 20);
 		panel.add(emailTextField);
 		emailTextField.setColumns(10);
 		
 		JLabel lblTephone = new JLabel("Telephone * :");
-		lblTephone.setBounds(10, 164, 67, 14);
+		lblTephone.setBounds(10, 164, 80, 14);
 		panel.add(lblTephone);
 		
 		telTextField = new JTextField();
-		telTextField.setBounds(87, 161, 124, 20);
+		telTextField.setBounds(100, 161, 161, 20);
 		panel.add(telTextField);
 		telTextField.setColumns(10);
 		
 		JLabel lblAge = new JLabel("Age * :");
-		lblAge.setBounds(10, 204, 46, 14);
+		lblAge.setBounds(10, 279, 80, 14);
 		panel.add(lblAge);
 		
 		ageTextField = new JTextField();
-		ageTextField.setBounds(87, 201, 124, 20);
+		ageTextField.setBounds(100, 276, 161, 20);
 		panel.add(ageTextField);
 		ageTextField.setColumns(10);
 		
 		JLabel lblAdresse = new JLabel("Adresse * :");
-		lblAdresse.setBounds(10, 237, 67, 14);
+		lblAdresse.setBounds(10, 204, 80, 14);
 		panel.add(lblAdresse);
 		
 		adresseTextField = new JTextField();
-		adresseTextField.setBounds(87, 234, 124, 20);
+		adresseTextField.setBounds(100, 201, 161, 20);
 		panel.add(adresseTextField);
 		adresseTextField.setColumns(10);
 		
 		JLabel lblProfession = new JLabel("Profession * :");
-		lblProfession.setBounds(253, 88, 76, 14);
+		lblProfession.setBounds(308, 52, 98, 14);
 		panel.add(lblProfession);
 		
 		cinTextField = new JTextField();
-		cinTextField.setBounds(357, 49, 149, 20);
+		cinTextField.setBounds(100, 242, 161, 20);
 		panel.add(cinTextField);
 		cinTextField.setColumns(10);
 		
-		JLabel lblCin = new JLabel("CIN :");
-		lblCin.setBounds(253, 52, 46, 14);
+		JLabel lblCin = new JLabel("CIN * :");
+		lblCin.setBounds(10, 239, 80, 14);
 		panel.add(lblCin);
 		
-		JLabel lblNotifications = new JLabel("Notifications d'op\u00E9rations * : ");
-		lblNotifications.setBounds(247, 164, 147, 14);
+		JLabel lblNotifications = new JLabel("Notifications d'op\u00E9rations : ");
+		lblNotifications.setBounds(308, 164, 183, 14);
 		panel.add(lblNotifications);
 		
 		JRadioButton rdbtnSms = new JRadioButton("SMS");
-		rdbtnSms.setBounds(400, 160, 46, 23);
+		rdbtnSms.setBounds(514, 160, 59, 23);
 		panel.add(rdbtnSms);
 		
 		JRadioButton rdbtnEmail = new JRadioButton("Email");
-		rdbtnEmail.setBounds(457, 160, 49, 23);
+		rdbtnEmail.setBounds(599, 160, 59, 23);
 		panel.add(rdbtnEmail);
 		
 		JComboBox professionComboBox = new JComboBox();
 		professionComboBox.setModel(new DefaultComboBoxModel(new String[] {"ARCHITECTE", "ANALYSTE ", "AVOCAT(E)", "CHARGE(E) DE PROJET", "CHEF DE SERVICE", "DIRECTEUR(TRICE) DES OPERATIONS", "FORMATEUR(TRICE)", "INFORMATICIEN(NE)", "INGENIEUR DES TRAVAUX", "TECHNICIEN(NE)"}));
-		professionComboBox.setBounds(357, 85, 149, 20);
+		professionComboBox.setBounds(437, 49, 231, 20);
 		panel.add(professionComboBox);
 		
-		JLabel lblRevenus = new JLabel("Revenus mensuels * :");
-		lblRevenus.setBounds(271, 127, 109, 14);
+		JLabel lblRevenus = new JLabel("Revenus mensuels :");
+		lblRevenus.setBounds(308, 127, 134, 14);
 		panel.add(lblRevenus);
 		
 		revenusTextField = new JTextField();
-		revenusTextField.setBounds(389, 124, 86, 20);
+		revenusTextField.setBounds(448, 124, 156, 20);
 		panel.add(revenusTextField);
 		revenusTextField.setColumns(10);
 		
 		JLabel lblFcfa = new JLabel("FCFA");
-		lblFcfa.setBounds(485, 127, 32, 14);
+		lblFcfa.setBounds(614, 127, 54, 14);
 		panel.add(lblFcfa);
 		
 		JButton btnContinuer = new JButton("Suivant");
@@ -185,7 +187,7 @@ public class OuvertureCompte extends JFrame {
 				tabbedPane.setSelectedIndex(1);
 			}
 		});
-		btnContinuer.setBounds(400, 228, 104, 23);
+		btnContinuer.setBounds(564, 346, 104, 23);
 		panel.add(btnContinuer);
 		
 		JButton btnEnregistrer = new JButton("Enregistrer");
@@ -196,7 +198,7 @@ public class OuvertureCompte extends JFrame {
 				// Recuperation des valeurs saisies dans le formulaire
 				
 					// Declaration des variables
-				String nom, prenom, cin, profession, email, adresse;
+				String nom, prenom, cin, profession, email, adresse, login, password;
 				int age, telephone;
 				
 					// Affectation des valeurs saisies dans le formulaire
@@ -208,6 +210,8 @@ public class OuvertureCompte extends JFrame {
 				telephone = Integer.parseInt(telTextField.getText());
 				email = emailTextField.getText();
 				adresse = adresseTextField.getText();
+				login = pseudoTextField.getText();
+				password = mpTextField.getText();
 								
 				
 					// Creation d'un objet user
@@ -220,6 +224,8 @@ public class OuvertureCompte extends JFrame {
 				user.setTelephone(telephone);
 				user.setEmail(email);
 				user.setAdresse(adresse);
+				user.setLogin(login);
+				user.setPassword(password);
 				
 				
 					// Appel de la methode de la couche Service
@@ -239,6 +245,8 @@ public class OuvertureCompte extends JFrame {
 					telTextField.setText("");
 					emailTextField.setText("");
 					adresseTextField.setText("");
+					pseudoTextField.setText("");
+					mpTextField.setText("");
 					
 						// Affichage du dialoguebox succes
 					JOptionPane.showMessageDialog(null, "L'utilisateur " + user.getNom() + " a ete enregistre avec succes dans la base de donnée!");
@@ -250,7 +258,7 @@ public class OuvertureCompte extends JFrame {
 						
 			}
 		});
-		btnEnregistrer.setBounds(271, 228, 98, 23);
+		btnEnregistrer.setBounds(448, 346, 98, 23);
 		panel.add(btnEnregistrer);
 		
 		JButton btnAffichers = new JButton("Affichage");
@@ -260,8 +268,26 @@ public class OuvertureCompte extends JFrame {
 				frame.setVisible(true);
 			}
 		});
-		btnAffichers.setBounds(386, 7, 120, 23);
+		btnAffichers.setBounds(548, 7, 120, 23);
 		panel.add(btnAffichers);
+		
+		JLabel lblUser = new JLabel("Pseudo * :");
+		lblUser.setBounds(308, 245, 98, 14);
+		panel.add(lblUser);
+		
+		pseudoTextField = new JTextField();
+		pseudoTextField.setBounds(448, 242, 156, 20);
+		panel.add(pseudoTextField);
+		pseudoTextField.setColumns(10);
+		
+		JLabel lblMotdepasse = new JLabel("Mot de Passe * :");
+		lblMotdepasse.setBounds(308, 279, 115, 14);
+		panel.add(lblMotdepasse);
+		
+		mpTextField = new JTextField();
+		mpTextField.setBounds(448, 273, 156, 20);
+		panel.add(mpTextField);
+		mpTextField.setColumns(10);
 		
 		JPanel panel_1 = new JPanel();
 		tabbedPane.addTab("Pièces justificatives", null, panel_1, null);
@@ -367,6 +393,7 @@ public class OuvertureCompte extends JFrame {
 				// Appel de la methode de la couche Service
 				Service service = new Service();
 				int etat = service.connecterUserService(login,password);
+				//int etat = service.connecterUserService();
 				
 				// Vider des zones textes
 				LoginTextField.setText("");
@@ -376,7 +403,7 @@ public class OuvertureCompte extends JFrame {
 					
 					// Affichage du dialoguebox succes
 					JOptionPane.showMessageDialog(null, " Connexion reussie !");
-					EspaceClient frame = new EspaceClient();
+					EspaceAdmin frame = new EspaceAdmin();
 					frame.setVisible(true);
 				}
 				else {

@@ -11,16 +11,21 @@ import javax.persistence.Entity;
 
 @Entity
 public class Admin extends User {
-		
+	
+	
 	 // Constructeurs
-	 
+	
+	
+	public Admin() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	
 	
 	/**
 	 * @param login
 	 * @param password
 	 */
-	
-	
 	public Admin (String login, String password) {
 		super(login, password);
 	
@@ -37,14 +42,10 @@ public class Admin extends User {
 		System.out.println(super.nom);
 	}
 
+
 	public Admin(int identifiant, String nom, String prenom, int age, String cin, String profession, int telephone,
 			String email, String adresse, String login, String password) {
 		super(identifiant, nom, prenom, age, cin, profession, telephone, email, adresse, login, password);
-		// TODO Auto-generated constructor stub
-	}
-
-	public Admin() {
-		super();
 		// TODO Auto-generated constructor stub
 	}
 
@@ -74,6 +75,7 @@ public class Admin extends User {
 		super(nom, prenom, login, password);
 		// TODO Auto-generated constructor stub
 	}
+	
 	
 	
 	
